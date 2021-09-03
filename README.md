@@ -1,24 +1,24 @@
-# Project name here
-> Summary description here.
+# Tennisscorer
+> A Python library that allows you to track you tennis score.
 
-
-This file will become your README and also the index of your documentation.
 
 ## Install
 
-`pip install your_project_name`
+`pip install tennisscorer`
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+Use the `SetTracker`.
 
+```python
+scores = random.choices(population=[True, False], k=20)
+final_set = SetTracker(12, 12, final_point=12)
+
+for score in scores:
+    final_set.increase(score)
+    print(final_set)
+    if final_set.finished:
+        print('Game is over.')
+        print(final_set.is_winner_home)
+        break
 ```
-1+1
-```
-
-
-
-
-    2
-
-
